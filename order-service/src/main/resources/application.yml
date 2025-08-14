@@ -7,4 +7,16 @@ spring:
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
+  rabbitmq:
+    host: 192.168.52.128
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+#    listener:
+#      simple:
+#        acknowledge-mode: manual   # 手动 ack，方便演示重复消费
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
